@@ -233,7 +233,7 @@ function HowItWorks() {
 
 
 // GitHub Link Component
-function GitHubLink({ href = "#" }: { href?: string }) {
+function GitHubLink({ href = "https://github.com/abusoww/tuxmate" }: { href?: string }) {
     return (
         <a
             href={href}
@@ -252,7 +252,7 @@ function GitHubLink({ href = "#" }: { href?: string }) {
 }
 
 // Contribute Link Component  
-function ContributeLink({ href = "#" }: { href?: string }) {
+function ContributeLink({ href = "https://github.com/abusoww/tuxmate/blob/main/CONTRIBUTING.md" }: { href?: string }) {
     return (
         <a
             href={href}
@@ -1075,8 +1075,8 @@ export default function Home() {
                         <div className="header-controls flex items-center gap-3 sm:gap-4">
                             {/* Minimal text links group */}
                             <div className="flex items-center gap-3 sm:gap-4">
-                                <GitHubLink href="#" />
-                                <ContributeLink href="#" />
+                                <GitHubLink />
+                                <ContributeLink />
                                 {selectedCount > 0 && (
                                     <>
                                         <span className="text-[var(--text-muted)] opacity-30 hidden sm:inline">·</span>

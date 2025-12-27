@@ -542,11 +542,11 @@ print_summary
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-//  NIXOS SCRIPT
+//  NIX SCRIPT
 // ═══════════════════════════════════════════════════════════════════════════════
 
-function generateNixOSScript(packages: { app: AppData; pkg: string }[]): string {
-    return generateAsciiHeader('NixOS', packages.length) + generateSharedUtils(packages.length) + `
+function generateNixScript(packages: { app: AppData; pkg: string }[]): string {
+    return generateAsciiHeader('Nix', packages.length) + generateSharedUtils(packages.length) + `
 is_installed() { nix-env -q 2>/dev/null | grep -q "$1"; }
 
 install_pkg() {
@@ -796,7 +796,7 @@ export function generateInstallScript(options: ScriptOptions): string {
         case 'arch': return generateArchScript(packages);
         case 'fedora': return generateFedoraScript(packages);
         case 'opensuse': return generateOpenSUSEScript(packages);
-        case 'nix': return generateNixOSScript(packages);
+        case 'nix': return generateNixScript(packages);
         case 'flatpak': return generateFlatpakScript(packages);
         case 'snap': return generateSnapScript(packages);
         default: return '#!/bin/bash\necho "Unsupported distribution"\nexit 1';

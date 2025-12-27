@@ -33,7 +33,7 @@ All applications are defined in [`src/lib/data.ts`](src/lib/data.ts).
     arch: 'package-name',           // Use AUR package names with -bin suffix
     fedora: 'package-name',
     opensuse: 'package-name',
-    nixos: 'package-name',
+    nix: 'package-name',
     flatpak: 'com.vendor.AppId',    // Full Flatpak ID
     snap: 'snap-name',              // Include --classic if needed
   },
@@ -218,7 +218,7 @@ Open a [Discussion](https://github.com/abusoww/tuxmate/discussions) or create an
     arch: 'package-name',           // Use AUR package names with -bin suffix
     fedora: 'package-name',
     opensuse: 'package-name',
-    nixos: 'package-name',
+    nix: 'package-name',
     flatpak: 'com.vendor.AppId',    // Full Flatpak ID
     snap: 'snap-name',              // Include --classic if needed
   },

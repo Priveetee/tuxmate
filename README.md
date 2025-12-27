@@ -28,7 +28,7 @@ a new machine or can't remember all the package names for your favorite apps?
 - Arch Linux (pacman + AUR via yay)
 - Fedora (dnf)
 - openSUSE (zypper)
-- NixOS (nix-env)
+- Nix (nix-env)
 - Flatpak
 - Snap
 
@@ -107,8 +107,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 ## 🎯 Roadmap
 
 ### Completed
-- [x] Multi-distro support (Ubuntu, Debian, Arch, Fedora, openSUSE, NixOS)
-- [x] Flatpak & Snap universal package support
+- [x] Multi-distro support (Ubuntu, Debian, Arch, Fedora, openSUSE)
+- [x] Nix, Flatpak & Snap universal package support
 - [x] 150+ applications across 15 categories
 - [x] Smart script generation with error handling
 - [x] AUR helper integration (yay) for Arch
